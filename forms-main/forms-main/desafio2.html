@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Registro</title>
+</head>
+
+<body>
+    <h1>Formulário de Registro de Usuário</h1>
+    <form action="/processar-registro" method="get">
+
+        <b>Nome Completo:</b>
+        <input type="text" name="nome" placeholder="Digite seu nome">
+        <br><br> 
+
+        E-mail: <input type="email" name="email" required multiple>
+
+     Senha:<input type="password" name="senha"> <br /><br />
+        Confirmação de senha: <input type="password" name="confirmacao">
+        <input type="submit" value="Registrar">
+
+        Selecione o Pais:
+        <select name="estado">
+            <option value="BR">Brasil</option>
+            <option value="CAN">Canadá</option>
+            <option value="IR">Iralanda</option>
+            <option value="AUS">Australia</option>
+        </select>
+
+
+        <input type="checkbox" name="termos" value="1">
+        aceitar termos e condiçoes:
+        <form action="seu_script_php.php" method="post">
+            <button type="submit">Enviar</button>
+
+    </form>
+</body>
+
+</html>
